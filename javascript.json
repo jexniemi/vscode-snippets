@@ -11,7 +11,7 @@
 		],
 		"description": "Log output to console"
 	},
-	"Create functional component": {
+	"Create functional React-Native component": {
 		"prefix": "rfc",
 		"body": [
 			"import React from 'react'",
@@ -22,7 +22,7 @@
 			"    $0",
 			"  </View>",
 			")",
-			" ",
+			"",
 			"const styles = {",
 			"  container = {",
 			"    flex: 1",
