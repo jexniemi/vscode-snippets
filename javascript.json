@@ -31,41 +31,21 @@
 		],
 		"description": "Create functional React component"
 	},
-	"Create functional stateful component": {
-		"prefix": "rfcs",
-		"body": [
-			"import React, { useState, useEffect } from 'react'",
-			"import { Image, Text, View } from 'react-native'",
-			" ",
-			"export default (props) => (",
-			"  <View style={styles.container}>",
-			"    $0",
-			"  </View>",
-			")",
-			" ",
-			"const styles = {",
-			"  container = {",
-			"    flex: 1",
-			"  },",
-			"}"
-		],
-		"description": "Create functional stateful React component"
-	},
-	"Create component": {
-		"prefix": "cmp",
+	"Create element": {
+		"prefix": "el",
 		"body": [
 			"<${1:Element} style={{$2}}>",
 			"  $0",
 			"</ ${1:Element}>"
 		],
-		"description": "Create component"
+		"description": "Create element"
 	},
-	"Create single-tag component": {
-		"prefix": "scmp",
+	"Create element with self-closing tag": {
+		"prefix": "els",
 		"body": [
 			"<${1:Element} style={{$2}}$0/>",
 		],
-		"description": "Create a component with useState and useEffect imports"
+		"description": "Create self-closing element"
 	},
 	"Create a style object for React element": {
 		"prefix": "sty",
