@@ -1,0 +1,84 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+		"console.log('$1');",
+		"$2"
+		],
+		"description": "Log output to console"
+	},
+	"Create functional component": {
+		"prefix": "rfc",
+		"body": [
+			"import React from 'react'",
+			"import { Image, Text, View } from 'react-native'",
+			" ",
+			"export default (props) => (",
+			"  <View style={styles.container}>",
+			"    $0",
+			"  </View>",
+			")",
+			" ",
+			"const styles = {",
+			"  container = {",
+			"    flex: 1",
+			"  },",
+			"}"
+		],
+		"description": "Create functional React component"
+	},
+	"Create functional stateful component": {
+		"prefix": "rfcs",
+		"body": [
+			"import React, { useState, useEffect } from 'react'",
+			"import { Image, Text, View } from 'react-native'",
+			" ",
+			"export default (props) => (",
+			"  <View style={styles.container}>",
+			"    $0",
+			"  </View>",
+			")",
+			" ",
+			"const styles = {",
+			"  container = {",
+			"    flex: 1",
+			"  },",
+			"}"
+		],
+		"description": "Create functional stateful React component"
+	},
+	"Create component": {
+		"prefix": "cmp",
+		"body": [
+			"<${1:Element} style={{$2}}>",
+			"  $0",
+			"</ ${1:Element}>"
+		],
+		"description": "Create component"
+	},
+	"Create single-tag component": {
+		"prefix": "scmp",
+		"body": [
+			"<${1:Element} style={{$2}}$0/>",
+		],
+		"description": "Create a component with useState and useEffect imports"
+	},
+	"Create a style object for React element": {
+		"prefix": "sty",
+		"body": [
+			"style={{ $0 }}",
+		],
+		"description": "Create a style object for component"
+	},
+	"Import * from *": {
+		"prefix": "imp",
+		"body": [
+			"import $1 from '$2'",
+		],
+		"description": "Create import"
+	},
+}
